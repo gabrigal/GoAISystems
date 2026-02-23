@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import twilio from "twilio";
 
 export async function POST(req: NextRequest) {
   let body: { name?: string; phone?: string };
@@ -15,30 +14,26 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Name and phone are required" }, { status: 400 });
   }
 
-  const firstName = name.trim().split(" ")[0];
+  const webhookUrl = process.env.N8N_PREBOOK_WEBHOOK_URL;
+  if (!webhookUrl) {
+    console.warn("N8N_PREBOOK_WEBHOOK_URL not set — logging only");
+    console.log("Pre-book submission:", { name, phone });
+    return NextResponse.json({ success: true });
+  }
 
-  // Send thank-you SMS via Twilio
-  if (
-    process.env.TWILIO_ACCOUNT_SID &&
-    process.env.TWILIO_AUTH_TOKEN &&
-    process.env.TWILIO_PHONE_NUMBER
-  ) {
-    try {
-      const client = twilio(
-        process.env.TWILIO_ACCOUNT_SID,
-        process.env.TWILIO_AUTH_TOKEN
-      );
-      await client.messages.create({
-        from: process.env.TWILIO_PHONE_NUMBER,
-        to: phone,
-        body: `Hey ${firstName}! This is Gabriel from GO AI Systems 👋 You just booked a free strategy call — I'm looking forward to connecting. Before we chat, can you tell me a little about your current setup? Do you have a CRM, and roughly how many inbound calls/leads are you getting per week?`,
-      });
-    } catch (err) {
-      console.error("Twilio SMS error (pre-book):", err);
-      // Don't block the booking flow — continue even if SMS fails
-    }
-  } else {
-    console.warn("Twilio env vars not set — skipping thank-you SMS");
+  const res = await fetch(webhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name,
+      phone,
+      bookedAt: new Date().toISOString(),
+    }),
+  });
+
+  if (!res.ok) {
+    console.error("n8n pre-book webhook error:", res.status, await res.text());
+    // Don't block the booking flow — still redirect to Google Calendar
   }
 
   return NextResponse.json({ success: true });
