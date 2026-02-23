@@ -83,7 +83,7 @@ const services = [
     tagline: "A site built to capture and convert.",
     features: [
       "Futuristic, mobile-first design (dark mode)",
-      "Lead capture form + Calendly booking embed",
+      "Lead capture form + Google Calendar booking integration",
       "SEO foundation: titles, schema, local targeting",
       "Fast load — under 2 seconds",
       "Works standalone or paired with the AI system",

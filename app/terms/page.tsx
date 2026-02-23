@@ -42,10 +42,10 @@ export default function TermsPage() {
               1. Services
             </h2>
             <p className="text-slate-400 leading-relaxed text-sm">
-              GO AI Systems (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) provides website
-              design, development, SEO setup, and related digital services for
-              real estate professionals. By engaging our services, you agree to
-              these terms.
+              GO AI Systems (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) provides AI systems
+              including voice receptionists, SMS/email automation, appointment
+              booking workflows, and landing page funnels for real estate
+              professionals. By engaging our systems, you agree to these terms.
             </p>
           </section>
 

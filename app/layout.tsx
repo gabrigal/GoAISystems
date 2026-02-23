@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "GO AI Systems",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "GO AI Systems",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "GO AI Systems | Real Estate Lead-Capturing Websites",
     description:
       "Futuristic, high-converting websites for solo real estate agents.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,

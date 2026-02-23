@@ -20,7 +20,7 @@ const bundles: Bundle[] = [
     idealFor: "Agents who need a professional web presence with a built-in lead form.",
     includes: [
       "Landing Page (dark mode, mobile-first design)",
-      "Lead capture form + Calendly booking embed",
+      "Lead capture form + Google Calendar booking integration",
       "Basic SEO structure (titles, meta, sitemap)",
       "Google Analytics setup",
       "Hosted & deployed — live in 7 days",

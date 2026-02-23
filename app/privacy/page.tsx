@@ -90,10 +90,10 @@ export default function PrivacyPage() {
               5. Third-Party Services
             </h2>
             <p className="text-slate-400 leading-relaxed">
-              We may use third-party tools including Calendly (scheduling),
-              Google Analytics (analytics), and email service providers. Each
-              of these services has its own privacy policy, and we encourage
-              you to review them.
+              We may use third-party tools including Google Calendar (scheduling),
+              Google Analytics (analytics), n8n (workflow automation), and SMS
+              delivery providers. Each of these services has its own privacy
+              policy, and we encourage you to review them.
             </p>
           </section>
 
