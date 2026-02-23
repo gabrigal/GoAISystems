@@ -135,10 +135,10 @@ export default function TermsPage() {
             <p className="text-slate-400 leading-relaxed text-sm">
               For questions about these terms, contact us at:{" "}
               <a
-                href="mailto:hello@goaiservices.com"
+                href="mailto:hello@goaisystems.com"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                hello@goaiservices.com
+                hello@goaisystems.com
               </a>
             </p>
           </section>

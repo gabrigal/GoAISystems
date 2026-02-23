@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://goaiservices.com"),
+  metadataBase: new URL("https://goaisystems.com"),
   title: {
     default: "GO AI Systems | Lead-Capturing Websites for Solo Real Estate Agents",
     template: "%s | GO AI Systems",
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     "lead capture",
     "real estate SEO",
   ],
-  authors: [{ name: "Gabriel Ornes", url: "https://goaiservices.com" }],
+  authors: [{ name: "Gabriel Ornes", url: "https://goaisystems.com" }],
   creator: "GO AI Systems",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://goaiservices.com",
+    url: "https://goaisystems.com",
     title: "GO AI Systems | Lead-Capturing Websites for Solo Real Estate Agents",
     description:
       "Futuristic, high-converting websites for solo real estate agents. Turn clicks into calls.",

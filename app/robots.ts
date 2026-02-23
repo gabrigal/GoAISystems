@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://goaiservices.com/sitemap.xml",
+    sitemap: "https://goaisystems.com/sitemap.xml",
   };
 }

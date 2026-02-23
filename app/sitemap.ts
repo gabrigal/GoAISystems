@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://goaiservices.com";
+const baseUrl = "https://goaisystems.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

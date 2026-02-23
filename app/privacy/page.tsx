@@ -113,10 +113,10 @@ export default function PrivacyPage() {
             <p className="text-slate-400 leading-relaxed">
               For privacy-related questions, contact us at:{" "}
               <a
-                href="mailto:privacy@goaiservices.com"
+                href="mailto:privacy@goaisystems.com"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                privacy@goaiservices.com
+                privacy@goaisystems.com
               </a>
             </p>
           </section>
