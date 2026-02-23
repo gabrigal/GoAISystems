@@ -4,6 +4,7 @@ import SocialProof from "@/components/SocialProof";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Bundles from "@/components/Bundles";
+import Portfolio from "@/components/Portfolio";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -34,7 +35,10 @@ export default function Home() {
         {/* 5. Bundles — packages */}
         <Bundles />
 
-        {/* 6. FAQ */}
+        {/* 6. Portfolio — example site mockups */}
+        <Portfolio />
+
+        {/* 7. FAQ */}
         <FAQ />
 
         {/* 7. Contact / Book a Call */}
