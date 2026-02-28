@@ -146,8 +146,10 @@ export default function BookPage() {
                   onChange={handleChange}
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-white/[0.07] transition-all"
                 />
-                <p className="text-[11px] text-slate-600">
-                  We'll send a quick confirmation text — no spam, ever.
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  By providing your phone number, you consent to receive SMS messages from GO AI Systems for appointment confirmation and follow-up. Message frequency varies. Message &amp; data rates may apply. Reply <strong className="text-slate-400">STOP</strong> to opt out at any time. Reply <strong className="text-slate-400">HELP</strong> for help. See our{" "}
+                  <a href="/terms" className="text-cyan-500/70 hover:text-cyan-400 underline underline-offset-2 transition-colors">Terms</a>{" "}and{" "}
+                  <a href="/privacy" className="text-cyan-500/70 hover:text-cyan-400 underline underline-offset-2 transition-colors">Privacy Policy</a>.
                 </p>
               </div>
 

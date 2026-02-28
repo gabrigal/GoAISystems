@@ -131,7 +131,26 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-white mb-3">9. Contact</h2>
+            <h2 className="text-lg font-bold text-white mb-3">
+              9. SMS Messaging
+            </h2>
+            <p className="text-slate-400 leading-relaxed text-sm mb-3">
+              By providing your mobile phone number on our booking form, you
+              consent to receive SMS text messages from GO AI Systems for the
+              purpose of appointment confirmation and follow-up communications.
+            </p>
+            <ul className="text-slate-400 text-sm space-y-2 list-none">
+              <li><span className="text-slate-300 font-semibold">Message frequency:</span> Message frequency varies based on your interactions with us.</li>
+              <li><span className="text-slate-300 font-semibold">Rates:</span> Message and data rates may apply depending on your carrier plan.</li>
+              <li><span className="text-slate-300 font-semibold">Opt-out:</span> Reply <span className="text-white font-semibold">STOP</span> to any message to unsubscribe from future SMS messages at any time. You will receive a one-time confirmation message.</li>
+              <li><span className="text-slate-300 font-semibold">Help:</span> Reply <span className="text-white font-semibold">HELP</span> for assistance, or contact us at <a href="mailto:hello@goaisystems.com" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">hello@goaisystems.com</a>.</li>
+              <li><span className="text-slate-300 font-semibold">No sharing:</span> We do not sell, rent, or share your phone number with third parties for their marketing purposes.</li>
+              <li><span className="text-slate-300 font-semibold">Carriers:</span> Carriers are not liable for delayed or undelivered messages.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-white mb-3">10. Contact</h2>
             <p className="text-slate-400 leading-relaxed text-sm">
               For questions about these terms, contact us at:{" "}
               <a
